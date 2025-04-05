@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Width With Tailwind CSS</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="p-6 space-y-4">
+    <!-- Default full width -->
+    <div class="bg-pink-400 font-bold">Full width (default)</div>
+
+    <!-- Max width custom (200px) -->
+    <div class="bg-pink-600 font-bold max-w-[200px]">Max width: 200px</div>
+
+    <!-- Min width custom (100px) -->
+    <div class="bg-pink-800 font-bold min-w-[100px]">Min width: 100px</div>
+
+    <!-- Fixed width (20px) -->
+    <div class="bg-pink-900 font-bold w-[20px]">20px width</div>
+
+    <!-- Full width -->
+    <div class="bg-blue-500 text-white font-bold w-full">
+      w-full (100% width)
+    </div>
+
+    <!-- Half width -->
+    <div class="bg-green-500 text-white font-bold w-1/2">w-1/2 (50% width)</div>
+
+    <!-- One-fourth width -->
+    <div class="bg-red-500 text-white font-bold w-1/4">w-1/4 (25% width)</div>
+  </body>
+</html>

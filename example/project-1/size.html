@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Size in Tailwind CSS</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="h-screen">
+    <!-- Full size (height and width) -->
+    <div class="bg-red-400 size-full">
+      If you need the full height and width, use the size class.
+    </div>
+
+    <!-- 50% size (height and width) -->
+    <div class="bg-green-400 size-50">
+      If you need the same height and same width, use the size class.
+    </div>
+
+    <!-- 1/4 size (height and width) -->
+    <div class="bg-purple-400 size-1/4">
+      If you need the same height and same width, use the size class.
+    </div>
+
+    <!-- 1/4 size with hover effect changing to 1/12 and background color -->
+    <div class="bg-purple-400 size-1/4 hover:size-1/12 hover:bg-amber-900">
+      If you need the same height and same width, use the size class.
+    </div>
+  </body>
+</html>

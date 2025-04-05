@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="height=device-height, initial-scale=1.0" />
+    <title>Height Utilities - Tailwind CSS 4</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="h-screen p-4 space-y-4 bg-gray-100">
+    <!-- Full height (default screen height using h-screen on body) -->
+    <div class="bg-pink-400 font-bold p-4 h-full">
+      Full height (100% of body using h-full)
+    </div>
+
+    <!-- Max height: 200px -->
+    <div class="bg-pink-600 font-bold p-4 max-h-[200px] overflow-auto">
+      Max height: 200px. <br />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
+      feugiat elit. Vestibulum ante ipsum primis in faucibus orci luctus et
+      ultrices posuere cubilia curae.
+    </div>
+
+    <!-- Min height: 100px -->
+    <div class="bg-pink-800 font-bold p-4 min-h-[100px]">Min height: 100px</div>
+
+    <!-- Fixed height: 20px -->
+    <div class="bg-pink-900 font-bold p-2 h-[20px] text-white">20px height</div>
+
+    <!-- 50% height of body (screen) -->
+    <div class="bg-green-500 text-white font-bold p-4 h-1/2">
+      h-1/2 (50% of screen height)
+    </div>
+
+    <!-- 25% height of body (screen) -->
+    <div class="bg-red-500 text-white font-bold p-4 h-1/4">
+      h-1/4 (25% of screen height)
+    </div>
+  </body>
+</html>
