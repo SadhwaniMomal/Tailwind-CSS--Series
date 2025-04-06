@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Container with Tailwind CSS</title>
+    <!-- 🔗 Link to your compiled Tailwind CSS file -->
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="bg-gray-100 py-10">
+    <!-- ✅ Method 1: Using Tailwind config (recommended for consistency) -->
+    <!-- Requires `center: true` in tailwind.config.js -->
+    <div class="container bg-red-300 p-6 text-center rounded shadow-md">
+      <h1 class="text-xl font-bold text-white">
+        Centered Container - Config Method
+      </h1>
+    </div>
+
+    <!-- 🔄 Spacing between examples -->
+    <div class="my-10"></div>
+
+    <!-- ✅ Method 2: Manual Centering using `mx-auto` -->
+    <div
+      class="container mx-auto bg-blue-300 p-6 text-center rounded shadow-md w-1/2"
+    >
+      <h1 class="text-xl font-bold text-white">
+        Centered Container - mx-auto Method
+      </h1>
+    </div>
+
+    <!-- 📝 Notes for Beginners -->
+    <!-- 
+      1. `container` is a responsive utility class in Tailwind.
+      2. `mx-auto` horizontally centers block elements if they have a defined width.
+      3. In Method 2, we use `w-1/2` to define a width so `mx-auto` can center it.
+      4. `p-6`, `rounded`, and `shadow-md` add padding, rounded corners, and shadow.
+    -->
+  </body>
+</html>

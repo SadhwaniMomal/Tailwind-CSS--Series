@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position with Tailwind CSS 4</title>
+    <!-- Link to your compiled Tailwind CSS -->
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body>
+    <!-- Container with relative position to hold absolute children -->
+    <div class="bg-red-200 size-90 relative text-center [&>*]:text-center">
+      <!-- Top-left absolute positioned box -->
+      <div class="bg-amber-900 text-white font-bold size-32 absolute">
+        position absolute
+      </div>
+
+      <!-- Top-right absolute positioned box -->
+      <div class="bg-purple-900 text-white font-bold size-32 absolute right-0">
+        position absolute right-0
+      </div>
+
+      <!-- Bottom-left absolute positioned box -->
+      <div
+        class="bg-green-900 text-white font-bold size-32 absolute bottom-0 left-0"
+      >
+        position absolute bottom-0 left-0
+      </div>
+
+      <!-- Bottom-right absolute positioned box -->
+      <div
+        class="bg-gray-900 text-white font-bold size-32 absolute bottom-0 right-0"
+      >
+        position absolute bottom-0 right-0
+      </div>
+    </div>
+
+    <!-- Container demonstrating fixed position -->
+    <div class="bg-amber-100 size-90">
+      <!-- This h1 stays fixed on the screen no matter where you scroll -->
+      <h1 class="bg-pink-400 text-white fixed z-50">position fixed</h1>
+    </div>
+
+    <!-- Container using inset utility -->
+    <div class="bg-pink-300 size-90 text-center [&>*]:text-center relative">
+      <!-- Inset from all sides by 25 units, using custom 'inset-25' class -->
+      <div class="bg-gray-900 text-white font-bold absolute inset-25 size-36">
+        absolute inset-25
+      </div>
+    </div>
+  </body>
+</html>
