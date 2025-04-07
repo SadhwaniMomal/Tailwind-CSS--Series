@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Sets character encoding -->
+    <meta charset="UTF-8" />
+
+    <!-- Sets viewport to ensure responsive behavior -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title -->
+    <title>Interactivity with Tailwind CSS</title>
+
+    <!-- Linking Tailwind CSS -->
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body>
+    <!-- ========== Normal Button (No Interactivity) ========== -->
+    <button class="p-3 m-4 bg-blue-600 text-white font-bold rounded-md">
+      Normal Button
+    </button>
+
+    <!-- ========== Hover Effect ========== -->
+    <button
+      class="p-3 m-4 bg-blue-600 hover:bg-amber-600 text-white font-bold rounded-md"
+    >
+      Hover Effect
+    </button>
+    <!-- When hovered, background color changes from blue to amber -->
+
+    <!-- ========== Focus Effect ========== -->
+    <button
+      class="p-3 m-4 bg-blue-600 focus:bg-pink-500 text-white font-bold rounded-md"
+    >
+      Focus Effect
+    </button>
+    <!-- When the button is focused (keyboard tab or click), bg becomes pink -->
+
+    <!-- ========== Active Effect ========== -->
+    <button
+      class="p-3 m-4 bg-blue-600 active:bg-red-900 text-white font-bold rounded-md"
+    >
+      Active Effect
+    </button>
+    <!-- When button is actively clicked, background changes to dark red -->
+
+    <!-- ========== Hover (Not Focused) Effect ========== -->
+    <button
+      class="p-3 m-4 bg-blue-600 hover:not-focus:bg-indigo-900 text-white font-bold rounded-md"
+    >
+      hover:not-focus:bg-indigo-700
+    </button>
+    <!-- Tries to apply bg-indigo-900 only on hover without focus (note: "not-focus" may need custom plugin or support) -->
+
+    <!-- ========== Combined Hover, Focus, Active ========== -->
+    <button
+      class="p-3 m-4 bg-blue-600 hover:bg-red-400 focus:bg-red-700 active:bg-red-900 text-white font-bold rounded-md"
+    >
+      Hover Focus Active Effect
+    </button>
+    <!-- Hover: red-400 | Focus: red-700 | Active: red-900 -->
+
+    <!-- ========== Group Hover Effect ========== -->
+    <div class="group m-4 p-4 border rounded">
+      <!-- When the parent div is hovered, all group-hover children get updated -->
+      <h1 class="group-hover:bg-amber-500 p-2">Group Effect</h1>
+      <h1 class="group-hover:bg-amber-500 p-2">Lorem, ipsum dolor.</h1>
+    </div>
+    <!-- Useful for hover effect on child elements when parent is hovered -->
+  </body>
+</html>

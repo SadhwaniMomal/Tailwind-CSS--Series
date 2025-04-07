@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8" />
+    <!-- Ensures proper rendering on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title of the webpage -->
+    <title>Filter with Tailwind CSS</title>
+
+    <!-- Linking the compiled Tailwind CSS file -->
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body>
+    <!-- ========== BLUR FILTER DEMO ========== -->
+    <div class="container border-amber-500 border-2 py-6 px-5">
+      <h1 class="font-bold text-center text-3xl">BLUR</h1>
+      <div class="flex [&>*]:flex">
+        <!-- Original Image -->
+        <img class="size-56" src="./images/img.jpg" alt="" />
+        <!-- Default blur -->
+        <img class="blur size-56" src="./images/img.jpg" alt="" />
+        <!-- Medium blur -->
+        <img class="blur-md size-56" src="./images/img.jpg" alt="" />
+        <!-- Extra-large blur -->
+        <img class="blur-2xl size-56" src="./images/img.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- ========== BRIGHTNESS FILTER DEMO ========== -->
+    <div class="container border-amber-600 border-2 py-6 px-5">
+      <h1 class="font-bold text-center text-3xl">Brightness</h1>
+      <div class="flex [&>*]:flex">
+        <!-- Original Image -->
+        <img class="size-56" src="./images/img.jpg" alt="" />
+        <!-- 50% brightness -->
+        <img class="brightness-50 size-56" src="./images/img.jpg" alt="" />
+        <!-- 90% brightness -->
+        <img class="brightness-90 size-56" src="./images/img.jpg" alt="" />
+        <!-- 200% brightness -->
+        <img class="brightness-200 size-56" src="./images/img.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- ========== CONTRAST FILTER DEMO ========== -->
+    <div class="container border-amber-600 border-2 py-6 px-5">
+      <h1 class="font-bold text-center text-3xl">Contrast</h1>
+      <div class="flex [&>*]:flex">
+        <!-- Original Image -->
+        <img class="size-56" src="./images/img.jpg" alt="" />
+        <!-- Normal contrast -->
+        <img class="contrast-100 size-56" src="./images/img.jpg" alt="" />
+        <!-- Increased contrast -->
+        <img class="contrast-200 size-56" src="./images/img.jpg" alt="" />
+        <!-- Much higher contrast -->
+        <img class="contrast-400 size-56" src="./images/img.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- ========== GRAYSCALE FILTER DEMO ========== -->
+    <div class="container border-amber-600 border-2 py-6 px-5">
+      <h1 class="font-bold text-center text-3xl">Grayscale</h1>
+      <div class="flex [&>*]:flex">
+        <!-- Original Image -->
+        <img class="size-56" src="./images/img.jpg" alt="" />
+        <!-- Partial grayscale (50%) -->
+        <img class="grayscale-50 size-56" src="./images/img.jpg" alt="" />
+        <!-- Full grayscale -->
+        <img class="grayscale-100 size-56" src="./images/img.jpg" alt="" />
+        <!-- Invalid value (no effect), Tailwind supports only 0 or 100 -->
+        <img class="grayscale-400 size-56" src="./images/img.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- ========== INVERT FILTER DEMO ========== -->
+    <div class="container border-amber-600 border-2 py-6 px-5">
+      <h1 class="font-bold text-center text-3xl">Invert</h1>
+      <div class="flex [&>*]:flex">
+        <!-- Original Image -->
+        <img class="size-56" src="./images/img.jpg" alt="" />
+        <!-- Inverted colors -->
+        <img class="invert size-56" src="./images/img.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- ========== HUE ROTATE FILTER DEMO ========== -->
+    <div class="container border-amber-600 border-2 py-6 px-5">
+      <h1 class="font-bold text-center text-3xl">Hue</h1>
+      <div class="flex [&>*]:flex">
+        <!-- Original Image -->
+        <img class="size-56" src="./images/img.jpg" alt="" />
+        <!-- Rotate hue by 90 degrees -->
+        <img class="hue-rotate-90 size-56" src="./images/img.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- ========== OPTIONAL CONFIGURATION NOTE ========== -->
+    <!-- 
+      To completely disable filter utilities in Tailwind, go to tailwind.config.js 
+      and add this configuration:
+
+      plugins: [],
+      corePlugins: {
+        filter: false
+      }
+    -->
+  </body>
+</html>
